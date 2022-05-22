@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.popUp {
+  animation: FadeIn 0.8s;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 1px grey;
+  padding: 15px 20px 30px;
+  width: 400px;
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 200px);
+  width: 400px;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popUp p:first-child {
+  text-align: right;
+}
+
+.popUp p:first-child span {
+  cursor: pointer;
+}
+
+.popUp h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.popUp .text {
+  margin-bottom: 25px;
+}
+
+.popUp .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 0 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.startButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
